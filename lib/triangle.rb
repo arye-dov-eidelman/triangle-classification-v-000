@@ -13,8 +13,7 @@ class Triangle
     validate
     return :equilateral if @shape.uniq.length == 1
     return :isosceles if @shape.uniq.length == 2
-    result = :scalene if @shape.uniq.length == 3
-    result
+    return :scalene if @shape.uniq.length == 3
   end
 end
 
